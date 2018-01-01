@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "exercise-1": " parcel -p 8080 ./01-drum-kit/index.html",
-	"build-exercise-1": " parcel build ./01-drum-kit/index.html -d ./01-drum-kit/dist"
+	"build-exercise-1": " parcel build ./01-drum-kit/index.html --public-url ./ -d ./01-drum-kit/dist"
   },
   "repository": {
     "type": "git",

@@ -20,7 +20,6 @@ class Drumkit {
 	 *
 	 * @return void
 	 */
-
 	public init() {
 		this._addAudioIsPlayingListener();
 		this._addTransitionEndListenerToKeys();
@@ -35,14 +34,18 @@ class Drumkit {
 	 * @return void
 	 */
 	protected _playsound(event: IPlaysoundEvent) {
-		const sound: ISoundElement = this._audio.find((audio: Element): boolean => {
-			return audio.attributes[this._keyAtrribute].value === String(event.keyCode);
-		});
-
-		if (sound) {
-			sound.currentTime = 0;
-			sound.play();
-		}
+		// Find the audio el from the array where the data attr equals the keycode
+		this._findEl(String(event.keyCode), this._audio)
+			.then((sound: ISoundElement) => {
+				// Play the sound if audio el was found
+				if (sound) {
+					sound.currentTime = 0;
+					sound.play();
+				}
+			}).catch((e) => {
+				// tslint:disable-next-line
+				console.warn(e);
+			});
 	}
 
 	/**
@@ -51,6 +54,7 @@ class Drumkit {
 	 * @return void
 	 */
 	protected _addAudioIsPlayingListener(): void {
+		// Add event listener to each audio el in the array
 		this._audio.forEach((audio: Element) => {
 			const key = String(audio.attributes[this._keyAtrribute].value);
 
@@ -66,13 +70,17 @@ class Drumkit {
 	 * @return void
 	 */
 	protected _keyIsPlaying(keyCode: string) {
-		const keyEl: Element = this._keys.find((key: Element): boolean => {
-			return key.attributes[this._keyAtrribute].value === keyCode;
-		});
-
-		if (keyEl) {
-			keyEl.classList.add(this._playingClass);
-		}
+		// Find the key el from the array where the data attr equals the keycode
+		this._findEl(keyCode, this._keys)
+			.then((el: Element) => {
+				// Add a playing class if key el found
+				if (el) {
+					el.classList.add(this._playingClass);
+				}
+			}).catch((e) => {
+				// tslint:disable-next-line
+				console.warn(e);
+			});
 	}
 
 	/**
@@ -80,14 +88,35 @@ class Drumkit {
 	 *
 	 * @return void
 	 */
-
 	protected _addTransitionEndListenerToKeys() {
+		// Add event listener to each key el in the array
 		this._keys.forEach((key: Element) => {
 			const keyCode = String(key.attributes[this._keyAtrribute].value);
 
 			key.addEventListener('transitionend', () => key.classList.remove(this._playingClass));
 		});
 	}
+
+	/**
+	 * Find an element from the array
+	 *
+	 * @param string code
+	 * @param array list
+	 * @return Promise<Element|string>
+	 */
+	protected _findEl(code: string, list: Element[]): Promise<Element|string> {
+		// Find the key el from the array where the data attr equals the keycode
+		const el: Element = list.find((item: Element): boolean => {
+			return item.attributes[this._keyAtrribute].value === code;
+		});
+		// return a promise
+		return new Promise<Element|string>((resolve, reject) => {
+			(el) ? resolve(el) : reject('No element found to match event keycode');
+ 		});
+	}
 }
 
-export default new Drumkit();
+const drumkit = new Drumkit();
+drumkit.init();
+
+export default drumkit;

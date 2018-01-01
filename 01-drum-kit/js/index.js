@@ -1,4 +1,5 @@
-// import style
+// Style
 import '../css/style.scss';
 
-import Drumkit from './drumkit.ts';
+// Scripts
+import drumkit from './drumkit';
