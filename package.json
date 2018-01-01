@@ -1,0 +1,33 @@
+{
+  "name": "js-30-day-challenge",
+  "version": "1.0.0",
+  "description": "30 basic JS challenges from Wes Bos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "exercise-1": " parcel -p 8080 ./01-drum-kit/index.html",
+	"build-exercise-1": " parcel build ./01-drum-kit/index.html -d ./01-drum-kit/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfowler40/js-30-day-challenge.git"
+  },
+  "keywords": [
+    "JS",
+    "ES6",
+    "Typescript"
+  ],
+  "author": "Ben Fowler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bfowler40/js-30-day-challenge/issues"
+  },
+  "homepage": "https://github.com/bfowler40/js-30-day-challenge#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
