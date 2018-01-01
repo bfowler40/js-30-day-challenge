@@ -16,4 +16,4 @@ While I don't really set New Year's Resolutions (or keep them) this challenge ca
 
 There is a README file within each exercises with some takeaways from each exercise i've jotted down :thumbsup:
 
-[01 - Drum Kit ](https://github.com/bfowler40/js-30-day-challenge/tree/master/01-drum-kit)
+[01 - Drum Kit ](/01-drum-kit)
