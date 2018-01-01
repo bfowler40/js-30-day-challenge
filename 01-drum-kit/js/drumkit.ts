@@ -20,7 +20,7 @@ class Drumkit {
 	 *
 	 * @return void
 	 */
-	public init() {
+	public init(): void {
 		this._addAudioIsPlayingListener();
 		this._addTransitionEndListenerToKeys();
 		window.addEventListener('keydown', this._playsound.bind(this));
@@ -30,10 +30,10 @@ class Drumkit {
 	 * Play sound when user presses a key
 	 * This function is the callback for the keydown event listener
 	 *
-	 * @param IPlaysoundEvent event
-	 * @return void
+	 * @param {IPlaysoundEvent} event
+	 * @return {void}
 	 */
-	protected _playsound(event: IPlaysoundEvent) {
+	protected _playsound(event: IPlaysoundEvent): void {
 		// Find the audio el from the array where the data attr equals the keycode
 		this._findEl(String(event.keyCode), this._audio)
 			.then((sound: ISoundElement) => {
@@ -51,7 +51,7 @@ class Drumkit {
 	/**
 	 * Add playing event listener to all audio
 	 *
-	 * @return void
+	 * @return {void}
 	 */
 	protected _addAudioIsPlayingListener(): void {
 		// Add event listener to each audio el in the array
@@ -66,10 +66,10 @@ class Drumkit {
 	 * Find the key element and add a css class
 	 * This function is the callback for the playing event listener
 	 *
-	 * @param string keyCode
-	 * @return void
+	 * @param {string} keyCode
+	 * @return {void}
 	 */
-	protected _keyIsPlaying(keyCode: string) {
+	protected _keyIsPlaying(keyCode: string): void {
 		// Find the key el from the array where the data attr equals the keycode
 		this._findEl(keyCode, this._keys)
 			.then((el: Element) => {
@@ -86,9 +86,9 @@ class Drumkit {
 	/**
 	 * Add event listeners to keys to remove the active class on transtion end
 	 *
-	 * @return void
+	 * @return {void}
 	 */
-	protected _addTransitionEndListenerToKeys() {
+	protected _addTransitionEndListenerToKeys(): void {
 		// Add event listener to each key el in the array
 		this._keys.forEach((key: Element) => {
 			const keyCode = String(key.attributes[this._keyAtrribute].value);
@@ -100,9 +100,9 @@ class Drumkit {
 	/**
 	 * Find an element from the array
 	 *
-	 * @param string code
-	 * @param array list
-	 * @return Promise<Element|string>
+	 * @param {string} code
+	 * @param {array} list
+	 * @return {Promise<Element|string>}
 	 */
 	protected _findEl(code: string, list: Element[]): Promise<Element|string> {
 		// Find the key el from the array where the data attr equals the keycode
