@@ -11,3 +11,9 @@ I am planning to build on this by using Typescript and ES6 features and to apply
 I may not learn a lot from the challenges per se, but I aim to dive a bit deeper into each exercise and hopefully begin a routine of building upon my knowledge outside of employment. :muscle:
 
 While I don't really set New Year's Resolutions (or keep them) this challenge can at least be seen as a new year, new start thing ... I will enjoy the discipline of doing something every day and ... it could be fun. :fire: :fire:
+
+##	Exercises
+
+There is a README file within each exercises with some takeaways from each exercise i've jotted down :thumbsup:
+
+[01 - Drum Kit ](https://github.com/bfowler40/js-30-day-challenge/tree/master/01-drum-kit)
