@@ -1,8 +1,12 @@
 # Exercise 01 - Drum Kit
 
+Javascript drum kit! :notes:
+
+Tested in Chrome.
+
 ## About this exercise ..
 
-Okay, interesting ... like i'd hoped there were a few takeaways from this exercise.
+Okay, interesting ... there were a few takeaways from this exercise like i'd hoped.
 
 :gem: Typings <br/>
 :gem: The JS Promise API <br/>
@@ -10,11 +14,11 @@ Okay, interesting ... like i'd hoped there were a few takeaways from this exerci
 
 #### Typings
 
-Made an effort not to use 'any' here and was led to extend the Event and Element interfaces, which was new. :smiley_cat:
+In an effort not to use 'any' was led to extend the Event and Element interfaces, which was new. :smiley_cat:
 
 #### JS Promise API
 
-Used the AngularJS $q service a lot but first time using the API. As a caveat there is no browser fallback here and i'm not too concerned at this point about handling a rejection. :snowboarder:
+Used the AngularJS $q service a lot, but first time using the API. As a caveat there is no browser fallback here and i'm not too concerned at this point about handling a rejection beyond a warning in the console. :snowboarder:
 
 #### Git
 
