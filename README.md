@@ -17,4 +17,5 @@ While I don't really set New Year's Resolutions (or keep them) this challenge ca
 There is a README file within each exercises with some takeaways from each exercise i've jotted down :thumbsup:
 
 [01 - Drum Kit ](/01-drum-kit) <br/>
-[02 - Clock ](/02-clock)
+[02 - Clock ](/02-clock) <br/>
+[03 - Update CSS Variables ](/03-update-css-variables) <br/>
