@@ -1,0 +1,53 @@
+@import './reset';
+
+/*
+* Nothing fancy, js exercise.
+*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #f5f5f5;
+}
+
+.container {
+	display: table;
+	max-width: 1400px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.clock-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.clock {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: #ffffff;
+	border-radius: 50%;
+}
+
+.clock-hand {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 45%;
+	height: 6px;
+	background: #343434;
+
+	transform-origin: 0;
+	transition: all 0.05s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+	&--hour {
+		width: 26%;
+	}
+
+	&--second {
+		height: 4px;
+	}
+}
