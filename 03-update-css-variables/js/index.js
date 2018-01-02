@@ -1,1 +1,5 @@
-console.log('exercie 3');
+// Style
+import '../css/style.scss';
+
+// Scripts
+import './colors';

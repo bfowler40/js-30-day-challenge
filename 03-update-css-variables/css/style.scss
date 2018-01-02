@@ -3,3 +3,64 @@
 /*
 * Nothing fancy, js exercise.
 */
+
+:root {
+	--primaryColor: #21eeda;
+	--secondaryColor: #25a8b6;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+	display: table;
+	min-width: 100vw;
+	min-height: 100vh;
+	background: linear-gradient(125deg, var(--primaryColor) 0%, var(--secondaryColor) 100%);
+	transition: all 300ms ease-out;
+}
+
+.color-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.color-controls {
+	display: inline-block;
+	background: #ffffff;
+	color: #343434;
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.color-title {
+	font-size: 28px;
+	font-weight: 300;
+	margin: 0 0 24px;
+}
+
+.color-label {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 0 8px;
+	cursor: pointer;
+
+	&[for="primaryColor"] {
+		background: var(--primaryColor);
+	}
+
+	&[for="secondaryColor"] {
+		background: var(--secondaryColor);
+	}
+}
+
+.color-input {
+	visibility: hidden;
+	position: absolute;
+	pointer-events: none;
+}
