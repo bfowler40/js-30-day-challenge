@@ -4,7 +4,7 @@ Javascript drum kit! :notes:
 
 Tested in Chrome.
 
-## About this exercise ..
+## About this exercise ...
 
 Okay, interesting ... there were a few takeaways from this exercise like i'd hoped.
 

@@ -4,7 +4,7 @@ It's a clock! :alarm_clock:
 
 Tested in Chrome.
 
-## About this exercise ..
+## About this exercise ...
 
 My code departed quite a bit from the exercise solution.
 

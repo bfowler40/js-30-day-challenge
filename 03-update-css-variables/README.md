@@ -4,7 +4,7 @@ An exercise to demonstrate CSS custom properties and how these variables can be 
 
 Tested in Chrome.
 
-## About this exercise ..
+## About this exercise ...
 
 This was a quick exercise and one that I may come back to later to build something cooler. For now it simply allows the user to create a simple gradient using colors selected from the HTML Input.
 
@@ -18,8 +18,8 @@ Another new type today is the HTMLInputElement. It was used in the exercise to s
 
 Serve:
 
-`npm run exercise-2`
+`npm run exercise-3`
 
 Build:
 
-`npm build exercise-2`
+`npm build exercise-3`
