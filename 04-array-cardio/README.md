@@ -41,7 +41,7 @@ const totalYears: number = inventors.reduce(
 
 Either way, I now have a better understanding moving forward.
 
-## Console Table
+#### Console Table
 
 Mind = :collision:
 
@@ -55,7 +55,7 @@ Gives you:
 
 ![console table](./images/table.png "Console Table")
 
-## Currying
+#### Currying
 
 One of those things I've probably done a thousand times without realising, but the mind must be firing pretty well as I immediately recognised that this would be useful approached writing the function with this in mind.
 
