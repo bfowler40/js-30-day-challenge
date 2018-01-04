@@ -10,7 +10,9 @@
 	"exercise-2": " parcel -p 8080 ./02-clock/index.html",
 	"build-exercise-2": " parcel build ./02-clock/index.html --public-url ./ -d ./02-clock/dist",
 	"exercise-3": " parcel -p 8080 ./03-update-css-variables/index.html",
-	"build-exercise-3": " parcel build ./03-update-css-variables/index.html --public-url ./ -d ./03-update-css-variables/dist"
+	"build-exercise-3": " parcel build ./03-update-css-variables/index.html --public-url ./ -d ./04-array-cardio/dist",
+	"exercise-4": " parcel -p 8080 ./04-array-cardio/index.html",
+	"build-exercise-4": " parcel build ./04-array-cardio/index.html --public-url ./ -d ./04-array-cardio/dist"
   },
   "repository": {
     "type": "git",
