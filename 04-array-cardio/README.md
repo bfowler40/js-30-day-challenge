@@ -29,13 +29,23 @@ export interface ITransport {
 
 One of the array method I was aware of, but am guilty of either not understanding it completely, or not using it where applicable.
 
+For example:
+
+```
+const totalYears: number = inventors.reduce(
+	(total: number, inventor: IInventor): number => {
+		return total + (inventor.passed - inventor.year);
+	}
+, 0);
+```
+
 Either way, I now have a better understanding moving forward.
 
 ## Console Table
 
 Mind = :collision:
 
-How have I not come across this before i'll never know. Really helpful and I will be using this _all the time_ from now on :gem:
+How have I not come across this before i'll never know. I will be using this _all the time_ from now on :gem:
 
 ```
 console.table(myObject);
