@@ -62,9 +62,9 @@ One of those things I've probably done a thousand times without realising, but t
 FWIW I wrote a small function that logs out a block for each task:
 
 ```
-function logHelper(): (result: any) => void {
-	let task  = 1;
-	const log = (result: any): void => {
+function logHelper(): (result: any) => any {
+	let task: number = 1;
+	const log: (result: any) => void = (result: any): void => {
 		console.warn(`Task: ${task++}`);
 		(typeof result == 'array' || typeof result == 'object') ? console.table(result) : console.log(result);
 	};
@@ -72,6 +72,7 @@ function logHelper(): (result: any) => void {
 	return log;
 }
 ```
+Unfortunately I'm using 'any' to be typesafe here, and a typed curried function seems like a can of worms ... I need to come back to that.
 
 Not perfect, but was useful enough. :guitar:
 

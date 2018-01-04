@@ -148,9 +148,9 @@ import {
 
 }
 
-function logHelper(): (result: any) => void {
-	let task  = 1;
-	const log = (result: any): void => {
+function logHelper(): (result: any) => any {
+	let task: number = 1;
+	const log: (result: any) => void = (result: any): void => {
 		/* tslint:disable */
 		console.log('');
 		console.warn(`Task: ${task++}`);
