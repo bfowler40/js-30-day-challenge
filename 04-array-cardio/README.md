@@ -80,8 +80,8 @@ Not perfect, but was useful enough. :guitar:
 
 Serve:
 
-`npm run exercise-2`
+`npm run exercise-4`
 
 Build:
 
-`npm build exercise-2`
+`npm build exercise-4`
