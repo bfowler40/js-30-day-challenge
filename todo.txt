@@ -1,0 +1,11 @@
+[FIXME]
+	Correct all the class constructors.
+[/FIXME]
+
+[TODO]
+	Build all exercise prod
+[/TODO]
+
+[IDEA]
+	Add all exercises to codepen
+[/IDEA]
