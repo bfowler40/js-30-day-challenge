@@ -1,5 +1,60 @@
 @import './reset';
 
+$fontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$background: #f0f0f0;
+$text: #434343;
+
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $fontFamily;
+	background: $background;
+	color: $text;
+	font-weight: 300;
+}
+
+.container {
+	text-align: center;
+}
+
+.search {
+	margin: 60px 0 0;
+}
+
+.search-title {
+	font-size: 32px;
+	margin: 0 0 32px;
+}
+
+.search-input {
+	display: inline-block;
+	width: 320px;
+	font-family: $fontFamily;
+	font-size: 18px;
+	font-weight: 300;
+	color: $text;
+	padding: 16px;
+	margin: 0 auto;
+	border: 0;
+	outline: none;
+}
+
+.search-button {
+	display: inline-block;
+	background: $text;
+	color: $background;
+	padding: 19px 34px;
+	cursor: pointer;
+	outline: none;
+}
+
+.search-results {
+	text-transform: capitalize;
+	margin: 40px 0 0;
+}
+
+.search-result {
+	margin: 12px;
+}
+
+.search-highlight {
+	background-color: rgba(aqua, 0.2);
 }
