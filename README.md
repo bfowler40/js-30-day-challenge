@@ -21,3 +21,4 @@ There is a README file within each exercises with some takeaways from each exerc
 [03 - Update CSS Variables ](/03-update-css-variables) <br/>
 [04 - Array Cardio ](/04-array-cardio) <br/>
 [05 - Flex Gallery ](/05-flex-gallery) <br/>
+[06 — Type Ahead ](/06-type-ahead) <br/>
