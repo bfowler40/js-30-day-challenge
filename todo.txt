@@ -2,6 +2,10 @@
 	Correct all the class constructors.
 [/FIXME]
 
+[FIXME]
+	Declare all methods private (protected is for when class is extended)
+[/FIXME]
+
 [TODO]
 	Build all exercise prod
 [/TODO]
