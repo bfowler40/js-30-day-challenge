@@ -16,7 +16,9 @@
 	"exercise-5": " parcel -p 8080 ./05-flex-gallery/index.html",
 	"build-exercise-5": " parcel build ./05-flex-gallery/index.html --public-url ./ -d ./05-flex-gallery/dist",
 	"exercise-6": " parcel -p 8080 ./06-type-ahead/index.html",
-	"build-exercise-6": " parcel build ./06-type-ahead/index.html --public-url ./ -d ./06-type-ahead/dist"
+	"build-exercise-6": " parcel build ./06-type-ahead/index.html --public-url ./ -d ./06-type-ahead/dist",
+	"exercise-7": " parcel -p 8080 ./07-array-cardio-2/index.html",
+	"build-exercise-7": " parcel build ./07-array-cardio-2/index.html --public-url ./ -d ./07-array-cardio-2/dist"
   },
   "repository": {
     "type": "git",
