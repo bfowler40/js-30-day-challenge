@@ -1,1 +1,6 @@
-console.log('hello');
+
+// Style
+import "../css/style.scss";
+
+// Scripts
+import "./draw";
