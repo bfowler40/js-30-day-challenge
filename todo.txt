@@ -3,6 +3,10 @@
 [/FIXME]
 
 [FIXME]
+	Write interfaces for classed
+[/FIXME]
+
+[FIXME]
 	Declare all methods private (protected is for when class is extended)
 [/FIXME]
 
