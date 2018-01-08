@@ -55,7 +55,7 @@
 
 	//  Timing
 	console.time('fetching data');
-	fetch('https://api.github.com/users/wesbos')
+	fetch('https://api.github.com/users/bfowler40')
 		.then((data) => data.json())
 		.then((data) => {
 			console.timeEnd('fetching data');
