@@ -20,7 +20,9 @@
 	"exercise-7": " parcel -p 8080 ./07-array-cardio-2/index.html",
 	"build-exercise-7": " parcel build ./07-array-cardio-2/index.html --public-url ./ -d ./07-array-cardio-2/dist",
 	"exercise-8": " parcel -p 8080 ./08-html-canvas/index.html",
-	"build-exercise-8": " parcel build ./08-html-canvas/index.html --public-url ./ -d ./08-html-canvas/dist"
+	"build-exercise-8": " parcel build ./08-html-canvas/index.html --public-url ./ -d ./08-html-canvas/dist",
+	"exercise-9": " parcel -p 8080 ./09-dev-tools-domination/index.html",
+	"build-exercise-9": " parcel build ./09-dev-tools-domination/index.html --public-url ./ -d ./09-dev-tools-domination/dist"
   },
   "repository": {
     "type": "git",
