@@ -2,4 +2,39 @@
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: whitesmoke;
+	color: #444444;
+}
+
+.container {
+	display: table;
+	width: 100vw;
+	height: 100vh;
+}
+
+.checkboxes {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.checkboxes-container {
+	max-width: 400px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+
+.checkboxes-item {
+	display: flex;
+	border-bottom: 1px solid #efefef;
+	padding: 32px;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+.checkboxes-checkbox {
+	width: 20px;
+	height: 20px;
+	margin: 0 32px 0 0;
 }
