@@ -24,7 +24,9 @@
 	"exercise-9": " parcel -p 8080 ./09-dev-tools-domination/index.html",
 	"build-exercise-9": " parcel build ./09-dev-tools-domination/index.html --public-url ./ -d ./09-dev-tools-domination/dist",
 	"exercise-10": " parcel -p 8080 ./10-check-multi-checkboxes/index.html",
-	"build-exercise-10": " parcel build ./10-check-multi-checkboxes/index.html --public-url ./ -d ./10-check-multi-checkboxes/dist"
+	"build-exercise-10": " parcel build ./10-check-multi-checkboxes/index.html --public-url ./ -d ./10-check-multi-checkboxes/dist",
+	"exercise-11": " parcel -p 8080 ./11-custom-video-player/index.html",
+	"build-exercise-11": " parcel build ./11-custom-video-player/index.html --public-url ./ -d ./11-custom-video-player/dist"
   },
   "repository": {
     "type": "git",
