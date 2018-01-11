@@ -1,0 +1,14 @@
+@import './reset';
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: table;
+	width: 100vw;
+	height: 100vh;
+	background: whitesmoke;
+}
+
+.container {
+	display: table-cell;
+	vertical-align: middle;
+}

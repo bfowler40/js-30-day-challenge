@@ -26,7 +26,9 @@
 	"exercise-10": " parcel -p 8080 ./10-check-multi-checkboxes/index.html",
 	"build-exercise-10": " parcel build ./10-check-multi-checkboxes/index.html --public-url ./ -d ./10-check-multi-checkboxes/dist",
 	"exercise-11": " parcel -p 8080 ./11-custom-video-player/index.html",
-	"build-exercise-11": " parcel build ./11-custom-video-player/index.html --public-url ./ -d ./11-custom-video-player/dist"
+	"build-exercise-11": " parcel build ./11-custom-video-player/index.html --public-url ./ -d ./11-custom-video-player/dist",
+	"exercise-12": " parcel -p 8080 ./12-key-sequence-detection/index.html",
+	"build-exercise-12": " parcel build ./12-key-sequence-detection/index.html --public-url ./ -d ./12-key-sequence-detection/dist"
   },
   "repository": {
     "type": "git",

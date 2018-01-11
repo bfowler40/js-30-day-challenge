@@ -17,5 +17,8 @@
 		],
 		"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
         "no-angle-bracket-type-assertion": true
+	},
+	"compilerOptions": {
+		"jsx": "react"
 	}
 }
