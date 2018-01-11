@@ -14,6 +14,10 @@
 	Build all exercise prod
 [/TODO]
 
+[TODO]
+	Style exercise 11 with flair!
+[/TODO]
+
 [IDEA]
 	Add all exercises to codepen
 [/IDEA]
