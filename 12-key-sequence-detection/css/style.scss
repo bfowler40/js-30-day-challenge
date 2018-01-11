@@ -6,9 +6,26 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: whitesmoke;
+	color: #434343;
 }
 
 .container {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.passcode {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.passcode-image {
+	width: 100%;
+	height: auto;
+}
+
+.passcode-title {
+	text-align: center;
+	font-size: 30px;
+	margin: 16px 0 0;
 }
