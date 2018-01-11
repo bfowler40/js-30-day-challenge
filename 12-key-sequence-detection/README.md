@@ -15,8 +15,7 @@ This is one of those things where i'm not sure if I have executed exactly as int
 However the typescript linter is satisfied and I am too somewhat.
 
 The concern is that the setter parameter must be the same type as the getter.  
-As my class property is an array of strings I then clone the array, push the new key
-and pass a spread as the setter parameter.
+As my class property is an array of strings I pass a spread of the pressed keys and the new key.
 
 Getter and Setter:
 
@@ -41,11 +40,18 @@ private set pressedKeys(keys: string[]) {
 ... and then updating
 
 ```
-const pressed = this.pressedKeys.slice(0);
+/**
+ * Handle the key up event
+ *
+ * @return {void}
+ */
+protected _onKeyUp(e: KeyboardEvent): void {
 
-if (e.key !== 'Meta') {
-	pressed.push(e.key);
-	this.pressedKeys = [...pressed];
+	if (e.key !== 'Meta') {
+		this.pressedKeys = [...this.pressedKeys, e.key];
+	}
+
+	this._testSecret();
 }
 ```
 
