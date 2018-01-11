@@ -42,7 +42,7 @@ class Passcode implements IPasscode {
 	 * @return {void}
 	 */
 	protected _onKeyUp(e: KeyboardEvent): void {
-		const pressed = this.pressedKeys;
+		const pressed = this.pressedKeys.slice(0);
 
 		if (e.key !== 'Meta') {
 			pressed.push(e.key);
