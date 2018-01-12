@@ -2,4 +2,56 @@
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: center;
+	color: #434343;
+}
+
+.panel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.panel-title {
+	transition: opacity 1000ms ease-in-out;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		z-index: -1;
+
+		transition: opacity 1000ms ease-in-out;
+	}
+
+	&--new_york:before {
+		background-image: url('../images/new-york.jpeg');
+	}
+
+	&--london:before {
+		background-image: url('../images/london.jpeg');
+	}
+
+	&--tokyo:before {
+		background-image: url('../images/tokyo.jpeg');
+	}
+
+	.panel--in_view & {
+		color: #ffffff;
+
+		&:before {
+			opacity: 1;
+		}
+	}
 }
