@@ -30,7 +30,9 @@
 	"exercise-12": " parcel -p 8080 ./12-key-sequence-detection/index.html",
 	"build-exercise-12": " parcel build ./12-key-sequence-detection/index.html --public-url ./ -d ./12-key-sequence-detection/dist",
 	"exercise-13": " parcel -p 8080 ./13-scroll-listener/index.html",
-	"build-exercise-13": " parcel build ./13-scroll-listener/index.html --public-url ./ -d ./13-scroll-listener/dist"
+	"build-exercise-13": " parcel build ./13-scroll-listener/index.html --public-url ./ -d ./13-scroll-listener/dist",
+	"exercise-14": " parcel -p 8080 ./14-js-reference-vs-copy/index.html",
+	"build-exercise-14": " parcel build ./14-js-reference-vs-copy/index.html --public-url ./ -d ./14-js-reference-vs-copy/dist"
   },
   "repository": {
     "type": "git",
