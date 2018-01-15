@@ -1,4 +1,4 @@
-# Exercise 14 - LocalStorage
+# Exercise 15 - LocalStorage
 
 Build a simple todo list and store the items in local storage
 
