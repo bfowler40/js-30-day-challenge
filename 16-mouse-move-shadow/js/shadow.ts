@@ -37,18 +37,15 @@ class Shadow {
 		let {
 			offsetX: x,
 			offsetY: y,
-		}: {
-			offsetX: number,
-			offsetY: number,
-		} = e;
+		}: IOffsetXY = e;
 
 		if (target !== this._container) {
 			x = x + target.offsetLeft;
 			y = y + target.offsetTop;
 		}
 
-		const xWalk = Math.round((x / width * this._walk) - (this._walk / 2));
-		const yWalk = Math.round((y / height * this._walk) - (this._walk / 2));
+		const xWalk: number = Math.round((x / width * this._walk) - (this._walk / 2));
+		const yWalk: number = Math.round((y / height * this._walk) - (this._walk / 2));
 
 		this._title.style.textShadow = `${xWalk}px ${yWalk}px 0 ${this._shadow}`;
 	}
