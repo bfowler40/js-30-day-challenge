@@ -1,9 +1,91 @@
 @import './reset';
 
 body {
+	display: table;
+	width: 100vw;
+	height: 100vh;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 18;
+	font-weight: 300;
+	font-size: 18px;
 	text-align: center;
 	color: #434343;
+}
+
+button {
+	cursor: pointer;
+	border: 1px solid whitesmoke;
+	padding: 6px 16px;
+
+	&:hover {
+		color: white;
+		background: #434343;
+	}
+}
+
+.container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	background-color: white;
+}
+
+.todo-title {
+	font-size: 36px;
+}
+
+.todo-list,
+.todo {
+	max-width: 300px;
+	padding: 32px;
+	margin: 32px auto;
+	border: 1px solid whitesmoke;
+}
+
+.todo-list {
+	text-align: left;
+
+	input {
+		visibility: hidden;
+		position: absolute;
+
+		&:checked + label:before {
+			content: '✔';
+		}
+
+	}
+
+	label {
+		display: block;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: whitesmoke;
+			margin: 6px 16px 0 0;
+
+		}
+	}
+
+	li {
+		position: relative;
+		margin: 16px 0;
+		padding: 0 0 0 32px;
+
+		&:first-child {
+			margin: 0 0 8px;
+		}
+	}
+}
+
+.todo-text {
+	appearance: none;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	background: whitesmoke;
+	border: 0;
+	padding: 4px 16px;
 }
