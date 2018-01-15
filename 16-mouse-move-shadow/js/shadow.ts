@@ -1,3 +1,4 @@
+import { IOffsetWidthHeight, IOffsetXY } from './interfaces';
 
 class Shadow {
 	protected _container: HTMLElement;
@@ -32,10 +33,13 @@ class Shadow {
 		const {
 			offsetWidth: width,
 			offsetHeight: height,
-		} = this._container;
+		}: IOffsetWidthHeight = this._container;
 		let {
 			offsetX: x,
 			offsetY: y,
+		}: {
+			offsetX: number,
+			offsetY: number,
 		} = e;
 
 		if (target !== this._container) {
