@@ -34,7 +34,9 @@
 	"exercise-14": " parcel -p 8080 ./14-js-reference-vs-copy/index.html",
 	"build-exercise-14": " parcel build ./14-js-reference-vs-copy/index.html --public-url ./ -d ./14-js-reference-vs-copy/dist",
 	"exercise-15": " parcel -p 8080 ./15-localstorage/index.html",
-	"build-exercise-15": " parcel build ./15-localstorage/index.html --public-url ./ -d ./15-localstorage/dist"
+	"build-exercise-15": " parcel build ./15-localstorage/index.html --public-url ./ -d ./15-localstorage/dist",
+	"exercise-16": " parcel -p 8080 ./16-mouse-move-shadow/index.html",
+	"build-exercise-16": " parcel build ./16-mouse-move-shadow/index.html --public-url ./ -d ./16-mouse-move-shadow/dist"
   },
   "repository": {
     "type": "git",

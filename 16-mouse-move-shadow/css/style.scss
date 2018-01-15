@@ -1,0 +1,17 @@
+@import './reset';
+
+body {
+	display: table;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 68px;
+	text-align: center;
+	color: #434343;
+}
+
+.container {
+	display: table-cell;
+	vertical-align: middle;
+}
