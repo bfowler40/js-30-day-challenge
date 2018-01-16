@@ -36,7 +36,9 @@
 	"exercise-15": " parcel -p 8080 ./15-localstorage/index.html",
 	"build-exercise-15": " parcel build ./15-localstorage/index.html --public-url ./ -d ./15-localstorage/dist",
 	"exercise-16": " parcel -p 8080 ./16-mouse-move-shadow/index.html",
-	"build-exercise-16": " parcel build ./16-mouse-move-shadow/index.html --public-url ./ -d ./16-mouse-move-shadow/dist"
+	"build-exercise-16": " parcel build ./16-mouse-move-shadow/index.html --public-url ./ -d ./16-mouse-move-shadow/dist",
+	"exercise-17": " parcel -p 8080 ./17-sorting-list/index.html",
+	"build-exercise-17": " parcel build ./17-sorting-list/index.html --public-url ./ -d ./17-sorting-list/dist"
   },
   "repository": {
     "type": "git",
