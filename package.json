@@ -38,7 +38,9 @@
 	"exercise-16": " parcel -p 8080 ./16-mouse-move-shadow/index.html",
 	"build-exercise-16": " parcel build ./16-mouse-move-shadow/index.html --public-url ./ -d ./16-mouse-move-shadow/dist",
 	"exercise-17": " parcel -p 8080 ./17-sorting-list/index.html",
-	"build-exercise-17": " parcel build ./17-sorting-list/index.html --public-url ./ -d ./17-sorting-list/dist"
+	"build-exercise-17": " parcel build ./17-sorting-list/index.html --public-url ./ -d ./17-sorting-list/dist",
+	"exercise-18": " parcel -p 8080 ./18-tally-with-reduce/index.html",
+	"build-exercise-18": " parcel build ./18-tally-with-reduce/index.html --public-url ./ -d ./18-tally-with-reduce/dist"
   },
   "repository": {
     "type": "git",
