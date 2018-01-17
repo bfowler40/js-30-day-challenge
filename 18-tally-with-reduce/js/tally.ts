@@ -1,10 +1,10 @@
 {
 	// Get all items with time data
-	const timeItems: any[] = [].slice.call(document.querySelectorAll('[data-time]'));
+	const timeItems: HTMLElement[] = [].slice.call(document.querySelectorAll('[data-time]'));
 
 	// Convert data-time on all elements to seconds
 	const seconds: number = timeItems
-		.reduce((total, item) => {
+		.reduce((total: number, item: HTMLElement) => {
 			const time: number = item.dataset
 				.time.split(':')
 				.map(parseFloat)
