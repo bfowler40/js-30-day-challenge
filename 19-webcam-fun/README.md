@@ -1,10 +1,11 @@
 # Exercise 19 - Webcam Fun
 
-Good, clean, fun with the webcam
+Good (clean) fun with the webcam
 
 ## About this exercise ...
 
-... What a fun exercise, more to come!
+Not a lot to say about this exercise really. It was interesting to consider the
+way which this takes the frame from the video and draws to the canvas.
 
 ## Tooling
 
