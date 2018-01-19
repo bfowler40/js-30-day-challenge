@@ -1,3 +1,4 @@
+import { redEffect, rgbSplit } from './filters';
 
 class Webcam {
 	protected _canvas: HTMLCanvasElement;
@@ -47,6 +48,7 @@ class Webcam {
 			this._context.drawImage(this._player, 0, 0, width, height);
 			// Get them pixels
 			const pixels = this._context.getImageData(0, 0, width, height);
+			// const filteredPixels = rgbSplit(pixels);
 
 			this._context.putImageData(pixels, 0, 0);
 		}, 16);
