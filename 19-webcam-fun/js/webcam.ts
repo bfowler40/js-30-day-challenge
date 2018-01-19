@@ -2,7 +2,7 @@ import { redEffect, rgbSplit } from './filters';
 
 class Webcam {
 	protected _canvas: HTMLCanvasElement;
-	protected _context: any;
+	protected _context: CanvasRenderingContext2D;
 	protected _picture: HTMLButtonElement;
 	protected _player: HTMLVideoElement;
 	protected _strip: HTMLElement;
@@ -25,11 +25,11 @@ class Webcam {
 	 */
 	public getVideo(): void {
 		navigator.mediaDevices.getUserMedia({ video: true, audio: false})
-			.then((localMediaStream: any) => {
+			.then((localMediaStream: any): void => {
 				this._player.src = window.URL.createObjectURL(localMediaStream);
 				this._player.play();
 			})
-			.catch((err: Error) => { console.log('Error ', err); });
+			.catch((err: Error): void => { console.log('Error ', err); });
 	}
 
 	/**
