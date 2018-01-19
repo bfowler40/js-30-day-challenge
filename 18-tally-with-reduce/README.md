@@ -49,8 +49,8 @@ So now this make better sense:
 
 Serve:
 
-`npm run exercise-17`
+`npm run exercise-18`
 
 Build:
 
-`npm build exercise-17`
+`npm build exercise-18`
