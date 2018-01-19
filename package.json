@@ -42,7 +42,9 @@
 	"exercise-18": " parcel -p 8080 ./18-tally-with-reduce/index.html",
 	"build-exercise-18": " parcel build ./18-tally-with-reduce/index.html --public-url ./ -d ./18-tally-with-reduce/dist",
 	"exercise-19": " parcel -p 8080 ./19-webcam-fun/index.html",
-	"build-exercise-19": " parcel build ./19-webcam-fun/index.html --public-url ./ -d ./19-webcam-fun/dist"
+	"build-exercise-19": " parcel build ./19-webcam-fun/index.html --public-url ./ -d ./19-webcam-fun/dist",
+	"exercise-20": " parcel -p 8080 ./20-speech-recognition/index.html",
+	"build-exercise-20": " parcel build ./20-speech-recognition/index.html --public-url ./ -d ./20-speech-recognition/dist"
   },
   "repository": {
     "type": "git",
