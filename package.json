@@ -44,7 +44,9 @@
 	"exercise-19": " parcel -p 8080 ./19-webcam-fun/index.html",
 	"build-exercise-19": " parcel build ./19-webcam-fun/index.html --public-url ./ -d ./19-webcam-fun/dist",
 	"exercise-20": " parcel -p 8080 ./20-speech-recognition/index.html",
-	"build-exercise-20": " parcel build ./20-speech-recognition/index.html --public-url ./ -d ./20-speech-recognition/dist"
+	"build-exercise-20": " parcel build ./20-speech-recognition/index.html --public-url ./ -d ./20-speech-recognition/dist",
+	"exercise-21": " parcel -p 8080 ./21-geolocation/index.html",
+	"build-exercise-21": " parcel build ./21-geolocation/index.html --public-url ./ -d ./21-geolocation/dist"
   },
   "repository": {
     "type": "git",
