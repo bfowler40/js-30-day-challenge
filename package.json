@@ -46,7 +46,9 @@
 	"exercise-20": " parcel -p 8080 ./20-speech-recognition/index.html",
 	"build-exercise-20": " parcel build ./20-speech-recognition/index.html --public-url ./ -d ./20-speech-recognition/dist",
 	"exercise-21": " parcel -p 8080 ./21-geolocation/index.html",
-	"build-exercise-21": " parcel build ./21-geolocation/index.html --public-url ./ -d ./21-geolocation/dist"
+	"build-exercise-21": " parcel build ./21-geolocation/index.html --public-url ./ -d ./21-geolocation/dist",
+	"exercise-22": " parcel -p 8080 ./22-follow-along-highlighter/index.html",
+	"build-exercise-22": " parcel build ./22-follow-along-highlighter/index.html --public-url ./ -d ./22-follow-along-highlighter/dist"
   },
   "repository": {
     "type": "git",
