@@ -6,7 +6,24 @@
 	</head>
 	<body>
 		<main class="container">
-			hello world
+			<div class="voices">
+				<h1>Funny voices <span>😂</span></h1>
+
+				<select id="voices" name="voice">
+					<option value="">Select a voice</option>
+				</select>
+
+				<label for="rate">Rate:</label>
+      			<input name="rate" type="range" min="0" max="3" value="1" step="0.1">
+
+				<label for="pitch">Pitch:</label>
+				<input name="pitch" type="range" min="0" max="2" step="0.1">
+
+				<textarea name="text">Good Morning</textarea>
+				<button id="stop">Stop!</button>
+				<button id="speak">Speak</button>
+
+			</div>
 		</main>
 		<script src="./js/index.js"></script>
 	</body>
