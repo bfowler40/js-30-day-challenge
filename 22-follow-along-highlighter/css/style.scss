@@ -3,13 +3,48 @@
 body {
 	display: block;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 1.5;
 	text-align: center;
 	color: #434343;
-	background: #f5f5f5;
+	background: #ffffff;
 	padding: 64px 0;
+}
+
+a {
+	color: #434343;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 24px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 100px auto;
+	padding: 40px;
+}
+
+.nav {
+	margin: 0 0 40px;
+}
+
+.menu li {
+	display: inline-block;
+	margin: 0 16px;
+}
+
+.highlight {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 20px;
+	transition: all 200ms;
+	background: aqua;
 }
