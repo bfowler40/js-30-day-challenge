@@ -12,3 +12,29 @@ body {
 	color: #434343;
 	background: #ffffff;
 }
+
+.voices-title {
+	font-size: 48px;
+	margin: 100px auto 60px;
+}
+
+.voices-icon {
+	font-size: 100px;
+}
+
+select,
+input,
+textarea {
+	display: block;
+	margin: 0 auto 30px;
+}
+
+textarea {
+	width: 240px;
+	height: 120px;
+}
+
+button {
+	display: inline-block;
+	margin: 0 16px;
+}

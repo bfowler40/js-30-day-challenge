@@ -41,7 +41,7 @@ class FunnyVoices {
 
 		// Filter the voice option by english language
 		// and populate the dropdown with the results
-		this._voicesDropdown.innerHTML = this._voices
+		this._voicesDropdown.innerHTML += this._voices
 			.filter((voice: SpeechSynthesisVoice): boolean =>
 				voice.lang.includes('en'))
 			.map((voice: SpeechSynthesisVoice): string =>
