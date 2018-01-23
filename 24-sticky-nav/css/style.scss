@@ -11,3 +11,25 @@ body {
 	color: #434343;
 	background: #ffffff;
 }
+
+.top {
+	background: #e1f7d5;
+	min-height: 300px;
+}
+
+.sticky {
+	background: #ffbdbd;
+	min-height: 100px;
+
+	.sticky_active & {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.bottom {
+	background: #c9c9ff;
+	min-height: 200vh;
+}
