@@ -26,4 +26,7 @@
 			passiveSupported = true;
 		},
 	});
+
+	// tslint:disable-next-line
+	console.log('Passive support: ', passiveSupported);
 }
