@@ -3,11 +3,17 @@
 	const trumpet: HTMLElement = (document.querySelector('.trumpet') as HTMLElement);
 
 	divs.forEach((div: HTMLElement) =>
-		div.addEventListener('click', log));
+		(div as any).addEventListener('click', log, {
+			capture: false,
+			once: true,
+		}));
 
-	trumpet.addEventListener('click', () => {
+	(trumpet as any).addEventListener('click', () => {
 		// tslint:disable-next-line
 		console.log('Toot Toot Toot!!');
+	}, {
+		capture: false,
+		once: true,
 	});
 
 	function log(e): void {
@@ -15,18 +21,4 @@
 		// tslint:disable-next-line
 		console.log(this.classList.value);
 	}
-}
-
-{
-	// Detect event listener option support
-	let passiveSupported: boolean = false;
-
-	const options = Object.defineProperty({}, 'passive', {
-		get: () => {
-			passiveSupported = true;
-		},
-	});
-
-	// tslint:disable-next-line
-	console.log('Passive support: ', passiveSupported);
 }
