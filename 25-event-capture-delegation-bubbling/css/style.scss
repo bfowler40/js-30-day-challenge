@@ -11,3 +11,31 @@ body {
 	color: #434343;
 	background: #ffffff;
 }
+
+.one,
+.two,
+.three {
+	position: relative;
+	cursor: pointer;
+	padding: 16.5vh 16vw;
+}
+
+.one {
+	background: #7bdff2;
+}
+
+.two {
+	background: #b2f7ef;
+}
+
+.three {
+	background: #eff7f5;
+}
+
+.trumpet {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 100px;
+	transform: translate3d(-50%, -50%, 0);
+}
