@@ -52,7 +52,9 @@
 	"exercise-23": " parcel -p 8080 ./23-speech-synthesis/index.html",
 	"build-exercise-23": " parcel build ./23-speech-synthesis/index.html --public-url ./ -d ./23-speech-synthesis/dist",
 	"exercise-24": " parcel -p 8080 ./24-sticky-nav/index.html",
-	"build-exercise-24": " parcel build ./24-sticky-nav/index.html --public-url ./ -d ./24-sticky-nav/dist"
+	"build-exercise-24": " parcel build ./24-sticky-nav/index.html --public-url ./ -d ./24-sticky-nav/dist",
+	"exercise-25": " parcel -p 8080 ./25-event-capture-delegation-bubbling/index.html",
+	"build-exercise-25": " parcel build ./25-event-capture-delegation-bubbling/index.html --public-url ./ -d ./25-event-capture-delegation-bubbling/dist"
   },
   "repository": {
     "type": "git",
