@@ -54,7 +54,9 @@
 	"exercise-24": " parcel -p 8080 ./24-sticky-nav/index.html",
 	"build-exercise-24": " parcel build ./24-sticky-nav/index.html --public-url ./ -d ./24-sticky-nav/dist",
 	"exercise-25": " parcel -p 8080 ./25-event-capture-delegation-bubbling/index.html",
-	"build-exercise-25": " parcel build ./25-event-capture-delegation-bubbling/index.html --public-url ./ -d ./25-event-capture-delegation-bubbling/dist"
+	"build-exercise-25": " parcel build ./25-event-capture-delegation-bubbling/index.html --public-url ./ -d ./25-event-capture-delegation-bubbling/dist",
+	"exercise-26": " parcel -p 8080 ./26-follow-along-nav/index.html",
+	"build-exercise-26": " parcel build ./26-follow-along-nav/index.html --public-url ./ -d ./26-follow-along-nav/dist"
   },
   "repository": {
     "type": "git",
