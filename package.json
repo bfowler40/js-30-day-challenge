@@ -56,7 +56,9 @@
 	"exercise-25": " parcel -p 8080 ./25-event-capture-delegation-bubbling/index.html",
 	"build-exercise-25": " parcel build ./25-event-capture-delegation-bubbling/index.html --public-url ./ -d ./25-event-capture-delegation-bubbling/dist",
 	"exercise-26": " parcel -p 8080 ./26-follow-along-nav/index.html",
-	"build-exercise-26": " parcel build ./26-follow-along-nav/index.html --public-url ./ -d ./26-follow-along-nav/dist"
+	"build-exercise-26": " parcel build ./26-follow-along-nav/index.html --public-url ./ -d ./26-follow-along-nav/dist",
+	"exercise-27": " parcel -p 8080 ./27-click-and-drag/index.html",
+	"build-exercise-27": " parcel build ./27-click-and-drag/index.html --public-url ./ -d ./27-click-and-drag/dist"
   },
   "repository": {
     "type": "git",
