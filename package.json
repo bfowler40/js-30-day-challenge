@@ -58,7 +58,9 @@
 	"exercise-26": " parcel -p 8080 ./26-follow-along-nav/index.html",
 	"build-exercise-26": " parcel build ./26-follow-along-nav/index.html --public-url ./ -d ./26-follow-along-nav/dist",
 	"exercise-27": " parcel -p 8080 ./27-click-and-drag/index.html",
-	"build-exercise-27": " parcel build ./27-click-and-drag/index.html --public-url ./ -d ./27-click-and-drag/dist"
+	"build-exercise-27": " parcel build ./27-click-and-drag/index.html --public-url ./ -d ./27-click-and-drag/dist",
+	"exercise-28": " parcel -p 8080 ./28-video-speed-controller/index.html",
+	"build-exercise-28": " parcel build ./28-video-speed-controller/index.html --public-url ./ -d ./28-video-speed-controller/dist"
   },
   "repository": {
     "type": "git",
