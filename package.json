@@ -60,7 +60,9 @@
 	"exercise-27": " parcel -p 8080 ./27-click-and-drag/index.html",
 	"build-exercise-27": " parcel build ./27-click-and-drag/index.html --public-url ./ -d ./27-click-and-drag/dist",
 	"exercise-28": " parcel -p 8080 ./28-video-speed-controller/index.html",
-	"build-exercise-28": " parcel build ./28-video-speed-controller/index.html --public-url ./ -d ./28-video-speed-controller/dist"
+	"build-exercise-28": " parcel build ./28-video-speed-controller/index.html --public-url ./ -d ./28-video-speed-controller/dist",
+	"exercise-29": " parcel -p 8080 ./29-countdown-timer/index.html",
+	"build-exercise-29": " parcel build ./29-countdown-timer/index.html --public-url ./ -d ./29-countdown-timer/dist"
   },
   "repository": {
     "type": "git",
