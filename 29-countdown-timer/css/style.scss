@@ -10,3 +10,38 @@ body {
 	text-align: center;
 	color: #232323;
 }
+
+.timers {
+	display: flex;
+}
+
+.timers-button {
+	flex: 1;
+	display: block;
+	font-weight: 700;
+	padding: 16px;
+	cursor: pointer;
+	border: 1px solid #f5f5f5;
+	border-left: 0;
+	outline: 0;
+}
+
+.timers-input {
+	padding: 0 16px;
+	font-size: 16px;
+	background: #f5f5f5;
+	border: 1px solid #f5f5f5;
+	border-left: 0;
+}
+
+.time {
+	margin: 120px 0 0;
+}
+
+.time-left {
+	font-size: 240px;
+}
+
+.time-finish {
+	font-size: 48px;
+}

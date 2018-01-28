@@ -6,7 +6,18 @@
 	</head>
 	<body>
 		<main class="container">
-			hello
+			<nav class="timers">
+				<button data-time="20" class="timers-button">20 Secs</button>
+				<button data-time="300" class="timers-button">Work 5</button>
+				<button data-time="900" class="timers-button">Quick 15</button>
+				<button data-time="1200" class="timers-button">Snack 20</button>
+				<button data-time="3600" class="timers-button">Lunch Break</button>
+				<input class="timers-input" type="text" name="minutes" placeholder="Enter Minutes">
+			</nav>
+			<div class="time">
+				<div class="time-left"></div>
+				<div class="time-finish"></div>
+			</div>
 		</main>
 		<script src="./js/index.js"></script>
 	</body>
