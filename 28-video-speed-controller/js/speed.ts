@@ -1,72 +1,41 @@
 
-class Draggable {
-	protected _isDown: boolean = false;
-	protected _scrollLeft: number;
-	protected _slides: HTMLElement;
-	protected _slidesActiveClass: string = 'active';
-	protected _startX: number;
+class Speed {
+	protected _max: number = 4;
+	protected _min: number = 0.4;
+	protected _speed: HTMLElement;
+	protected _speedBar: HTMLElement;
 
-	constructor(selector: string) {
-		this._slides = (document.querySelector(selector) as HTMLElement);
+	constructor() {
+		this._speed    = (document.querySelector('.speed') as HTMLElement);
+		this._speedBar = (document.querySelector('.speed-bar') as HTMLElement);
 	}
 
 	/**
-	 * Init class
+	 * Init the class
 	 *
 	 * @return {void}
 	 */
 	public init(): void {
-		this._slides.addEventListener('mousedown', (e: MouseEvent) => this._handleMouseDown(e));
-		this._slides.addEventListener('mousemove', (e: MouseEvent) => this._handleMouseMove(e));
-		this._slides.addEventListener('mouseleave', this._endDrag.bind(this));
-		this._slides.addEventListener('mouseup', this._endDrag.bind(this));
+		this._speed.addEventListener('mousemove', (e: MouseEvent) => this._handleMove(e));
 	}
 
 	/**
-	 * When user stops dragging the mouse
+	 * Handle mouse move
 	 *
+	 * @param {MouseEvent}
 	 * @return {void}
 	 */
-	protected _endDrag(): void {
-		this._isDown = false;
-		this._slides.classList.remove(this._slidesActiveClass);
+	protected _handleMove(e: MouseEvent): void {
+		const y: number            = e.pageY - this._speed.offsetTop;
+		const percent: number      = y / this._speed.offsetHeight;
+		const playbackRate: number = percent * (this._max - this._min) + this._min;
+
+		this._speedBar.style.height = `${ Math.round(percent * 100) }%`;
+		this._speedBar.textContent  = `${ playbackRate.toFixed(2) }×`;
 	}
-
-	/**
-	 * Store some information when the user starts to scroll
-	 *
-	 * @param {MouseEvent} e
-	 * @return {void}
-	 */
-	protected _handleMouseDown(e: MouseEvent): void {
-		this._isDown     = true;
-		this._startX     = e.pageX - this._slides.offsetLeft;
-		this._scrollLeft = this._slides.scrollLeft;
-
-		this._slides.classList.add(this._slidesActiveClass);
-	}
-
-	/**
-	 * Update the slides container while mouse down and moving
-	 *
-	 * @param {MouseEvent} e
-	 * @return {void}
-	 */
-	protected _handleMouseMove(e: MouseEvent) {
-		if (!this._isDown) {
-			return;
-		}
-
-		e.preventDefault();
-		const x: number    = e.pageX - this._slides.offsetLeft;
-		const walk: number = (x - this._startX) * 3;
-
-		this._slides.scrollLeft = this._scrollLeft - walk;
-	}
-
 }
 
-const draggable = new Draggable('.slides-container');
-draggable.init();
+const speed = new Speed();
+speed.init();
 
-export default draggable;
+export default speed;
