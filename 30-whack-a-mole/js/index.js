@@ -2,4 +2,4 @@
 import '../css/style.scss';
 
 // Scripts
-import './app';
+import './game';
