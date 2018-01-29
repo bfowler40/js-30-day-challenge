@@ -62,7 +62,9 @@
 	"exercise-28": " parcel -p 8080 ./28-video-speed-controller/index.html",
 	"build-exercise-28": " parcel build ./28-video-speed-controller/index.html --public-url ./ -d ./28-video-speed-controller/dist",
 	"exercise-29": " parcel -p 8080 ./29-countdown-timer/index.html",
-	"build-exercise-29": " parcel build ./29-countdown-timer/index.html --public-url ./ -d ./29-countdown-timer/dist"
+	"build-exercise-29": " parcel build ./29-countdown-timer/index.html --public-url ./ -d ./29-countdown-timer/dist",
+	"exercise-30": " parcel -p 8080 ./30-whack-a-mole/index.html",
+	"build-exercise-30": " parcel build ./30-whack-a-mole/index.html --public-url ./ -d ./30-whack-a-mole/dist"
   },
   "repository": {
     "type": "git",
