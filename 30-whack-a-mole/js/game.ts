@@ -91,10 +91,11 @@ class Game {
 			return; // They Cheated!!!
 		}
 
-		const mole: HTMLElement = (e.target as HTMLElement);
-		(mole.parentNode as HTMLElement).classList.remove(this._holeActiveClass);
 		this._score++;
 		this._keepScore(this._score);
+
+		const mole: HTMLElement = (e.target as HTMLElement);
+		(mole.parentNode as HTMLElement).classList.remove(this._holeActiveClass);
 	}
 
 	/**
@@ -103,11 +104,12 @@ class Game {
 	 * @return {void}
 	 */
 	protected _startGame(): void {
+		this._finished.textContent = '';
+		this._timeUp               = false;
+
 		this._keepScore();
 		this._peep();
-		this._finished.textContent = '';
 		// Run the game for 10 seconds
-		this._timeUp = false;
 		setTimeout(() => this._timeUp = true, 10000);
 	}
 
@@ -117,7 +119,7 @@ class Game {
 	 * @return {void}
 	 */
 	protected _keepScore(score: number = 0): void {
-		this._score = score;
+		this._score                  = score;
 		this._scoreBoard.textContent = `${ score }`;
 	}
 
